@@ -1,64 +1,192 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="JCICONAKRY-EXCELLENCE accompagne les initiatives locales, les projets innovants et les services de qualité à Conakry."
+    />
     <title>JCICONAKRY-EXCELLENCE</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-        main {
-            padding: 2em;
-        }
-        section {
-            margin-bottom: 2em;
-            background-color: white;
-            padding: 1em;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Bienvenue sur JCICONAKRY-EXCELLENCE</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Menu principal">
+        <div class="logo">JCICONAKRY<span>EXCELLENCE</span></div>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#accueil">Accueil</a>
+          <a href="#a-propos">À propos</a>
+          <a href="#services">Services</a>
+          <a href="#projets">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
     </header>
+
     <main>
-        <section id="accueil">
-            <h2>Accueil</h2>
-            <p>Ceci est la page d'accueil du projet JCICONAKRY-EXCELLENCE.</p>
-            <p>Nous travaillons sur ce projet pour atteindre l'excellence.</p>
-        </section>
-        <section id="a-propos">
-            <h2>À propos</h2>
-            <p>JCICONAKRY-EXCELLENCE est dédié à promouvoir l'excellence à Conakry, en Guinée.</p>
-            <p>Notre mission est de fournir des services de qualité et d'encourager l'innovation.</p>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Pour nous contacter, envoyez un email à contact@jcionakry-excellence.com</p>
-        </section>
+      <section id="accueil" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="eyebrow">L'excellence locale au service du développement</p>
+            <h1>Construisons une Conakry plus innovante et plus forte.</h1>
+            <p class="lead">
+              JCICONAKRY-EXCELLENCE met en place des solutions modernes, des services
+              de qualité et des projets structurants pour favoriser l'innovation, la
+              croissance et l'engagement communautaire.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#contact">Nous contacter</a>
+              <a class="btn btn-secondary" href="#services">Découvrir nos services</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-label="Données clés">
+            <div class="stat">
+              <strong>+120</strong>
+              <span>partenariats engagés</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>service orienté client</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>engagement pour la qualité</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="a-propos" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">À propos</p>
+          <h2>Une vision ambitieuse pour l'excellence.</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>
+              JCICONAKRY-EXCELLENCE est dédié à promouvoir l'excellence à Conakry, en
+              Guinée. Nous croyons que le développement durable passe par des idées
+              audacieuses, des solutions concrètes et une implication collective.
+            </p>
+            <p>
+              Notre mission est de fournir des services de qualité, soutenir les projets
+              innovants et créer des opportunités qui renforcent le tissu économique et
+              social local.
+            </p>
+          </div>
+          <div class="info-panel">
+            <h3>Nos valeurs</h3>
+            <ul>
+              <li>Qualité et excellence</li>
+              <li>Innovation et créativité</li>
+              <li>Engagement communautaire</li>
+              <li>Service durable et fiable</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Nos services</p>
+            <h2>Des solutions pensées pour votre réussite.</h2>
+          </div>
+          <div class="card-grid">
+            <article class="service-card">
+              <h3>Conseil stratégique</h3>
+              <p>Accompagnement pour structurer vos projets et améliorer votre performance.</p>
+            </article>
+            <article class="service-card">
+              <h3>Développement digital</h3>
+              <p>Création d'outils, de sites web et de solutions adaptées à votre vision.</p>
+            </article>
+            <article class="service-card">
+              <h3>Formation & innovation</h3>
+              <p>Renforcement des compétences et sensibilisation aux meilleures pratiques.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow-dark">Projets</p>
+          <h2>Des initiatives qui inspirent le changement.</h2>
+        </div>
+        <div class="project-grid">
+          <div class="project-item">
+            <span class="tag">Urban</span>
+            <h3>Programmes urbains</h3>
+            <p>Des actions coordonnées pour améliorer l'organisation et la qualité de vie.</p>
+          </div>
+          <div class="project-item">
+            <span class="tag">Digital</span>
+            <h3>Solutions numériques</h3>
+            <p>Des outils numériques modernes pour accélérer la transformation locale.</p>
+          </div>
+          <div class="project-item">
+            <span class="tag">Social</span>
+            <h3>Impact communautaire</h3>
+            <p>Des projets qui renforcent les liens et la cohésion autour des enjeux clés.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Discutons de votre prochain projet.</h2>
+            <p>
+              Nous sommes à l'écoute des initiatives qui favorisent l'excellence, la qualité
+              et l'innovation à Conakry et au-delà.
+            </p>
+            <ul class="contact-list">
+              <li>Email : contact@jcionakry-excellence.com</li>
+              <li>Téléphone : +224 000 000 000</li>
+              <li>Adresse : Conakry, Guinée</li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <label>
+              Nom complet
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </label>
+            <label>
+              Message
+              <textarea id="message" name="message" rows="4" placeholder="Décrivez votre besoin" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2026 JCICONAKRY-EXCELLENCE</p>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year"></span> JCICONAKRY-EXCELLENCE</p>
+      </div>
     </footer>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
